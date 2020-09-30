@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class ProductLeituraComponent implements OnInit {
 
 	products: Product[];
-	colunasVisiveis = ['id','name','price'];
+	colunasVisiveis = ['id','name','price','action'];
 
   constructor(private productService:ProductService) { }
 
