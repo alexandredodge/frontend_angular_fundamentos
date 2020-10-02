@@ -35,6 +35,7 @@ import { ProductUpdateComponent } from './components/product/product-update/prod
 import { ProductDeleteComponent } from './components/product/product-delete/product-delete.component';
 
 
+
 registerLocaleData(localePt);
 
 @NgModule({
@@ -54,6 +55,7 @@ registerLocaleData(localePt);
     ProductLeitura2Component,
     ProductUpdateComponent,
     ProductDeleteComponent
+    
     
     
   ],
