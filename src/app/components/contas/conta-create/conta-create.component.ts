@@ -1,5 +1,8 @@
 import { Conta } from './../Conta.model';
 import { Component, OnInit } from '@angular/core';
+import { ContaService } from '../conta.service';
+import { Router } from '@angular/router'
+
 
 
 
@@ -17,14 +20,17 @@ export class ContaCreateComponent implements OnInit {
 		operacao: ''
 	}
 
-  constructor() { }
+  constructor(private router:Router,private contaService:ContaService) { }
 
   ngOnInit() {
 	 
   }
   
   createConta():void{
-
-}
+    this.contaService.criarCOnta(this.conta).subscribe(() =>{
+      this.contaService.mostrarMensagem('Conta criada com sucesso!');
+      this.router.navigate(['/contas']);
+    })
+  }
  
 }
