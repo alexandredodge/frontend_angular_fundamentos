@@ -18,7 +18,7 @@ import { ProductCreateComponent } from './components/product/product-create/prod
 import { MatButtonModule } from '@angular/material/button';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule }from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { UsuarioCrudComponent } from './views/usuario-crud/usuario-crud.component';
@@ -28,11 +28,17 @@ import { ProductLeitura2Component } from './components/product/product-leitura2/
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
-
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import localePt from '@angular/common/locales/pt';
 import { registerLocaleData } from '@angular/common';
 import { ProductUpdateComponent } from './components/product/product-update/product-update.component';
 import { ProductDeleteComponent } from './components/product/product-delete/product-delete.component';
+import { ContaCreateComponent } from './components/contas/conta-create/conta-create.component';
+import { ContaCrudComponent } from './views/conta-crud/conta-crud.component';
+
+
+
+
 
 
 
@@ -54,15 +60,16 @@ registerLocaleData(localePt);
     ProductLeituraComponent,
     ProductLeitura2Component,
     ProductUpdateComponent,
-    ProductDeleteComponent
-    
-    
+    ProductDeleteComponent,
+    ContaCreateComponent,
+    ContaCrudComponent
     
   ],
   imports: [
-    BrowserModule,
+	BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
+	BrowserAnimationsModule,
+	MatAutocompleteModule,
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
@@ -75,7 +82,8 @@ registerLocaleData(localePt);
 	MatInputModule,
 	MatTableModule,
 	MatPaginatorModule,
-	MatSortModule
+	MatSortModule,
+	ReactiveFormsModule
   ],
   providers: [{
 	provide:LOCALE_ID,

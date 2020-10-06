@@ -8,6 +8,9 @@ import { UsuarioCrudComponent } from './views/usuario-crud/usuario-crud.componen
 import { UsuarioCreateComponent } from './components/usuarios/usuario-create/usuario-create.component' 
 import { ProductUpdateComponent } from './components/product/product-update/product-update.component'
 import { ProductDeleteComponent } from './components/product/product-delete/product-delete.component'
+import { ContaCreateComponent } from './components/contas/conta-create/conta-create.component'
+import { ContaCrudComponent } from './views/conta-crud/conta-crud.component'
+
 
 const routes: Routes = [{
   path: "",
@@ -30,6 +33,12 @@ const routes: Routes = [{
 },{
 	path:"products/delete/:id",
 	component: ProductDeleteComponent
+},{
+	path:"contas",
+	component: ContaCrudComponent
+},{
+	path:"conta/create",
+	component: ContaCreateComponent
 }
   
 ];
