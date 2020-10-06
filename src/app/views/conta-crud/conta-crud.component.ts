@@ -1,4 +1,4 @@
-import { Conta } from './../../components/contas/Conta.model';
+
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -9,11 +9,7 @@ import { Router } from '@angular/router';
 })
 export class ContaCrudComponent implements OnInit {
 
-  conta:Conta = {
-	  agencia: '',
-	  conta: '',
-	  operacao: ''
-  }
+
 
   constructor(private router:Router) { }
 

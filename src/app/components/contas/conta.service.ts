@@ -22,7 +22,11 @@ export class ContaService{
         })
     }
 
-    criarCOnta(conta:Conta):Observable<Conta>{debugger
+    criarCOnta(conta:Conta):Observable<Conta>{
         return this.http.post<Conta>(this.baseUrl,conta);
-    }
+	}
+	
+	findAllContas():Observable<Conta[]>{
+		return this.http.get<Conta[]>(this.baseUrl);
+	}
 }

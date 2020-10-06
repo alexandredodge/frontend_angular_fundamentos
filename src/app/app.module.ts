@@ -35,6 +35,7 @@ import { ProductUpdateComponent } from './components/product/product-update/prod
 import { ProductDeleteComponent } from './components/product/product-delete/product-delete.component';
 import { ContaCreateComponent } from './components/contas/conta-create/conta-create.component';
 import { ContaCrudComponent } from './views/conta-crud/conta-crud.component';
+import { ContaListagemComponent } from './components/contas/conta-listagem/conta-listagem.component';
 
 
 
@@ -62,7 +63,8 @@ registerLocaleData(localePt);
     ProductUpdateComponent,
     ProductDeleteComponent,
     ContaCreateComponent,
-    ContaCrudComponent
+    ContaCrudComponent,
+    ContaListagemComponent
     
   ],
   imports: [
