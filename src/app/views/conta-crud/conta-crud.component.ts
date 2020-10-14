@@ -17,7 +17,7 @@ export class ContaCrudComponent implements OnInit {
   }
 
   navigationContaCreate():void{
-	this.router.navigate(['/conta/create']);
+	this.router.navigate(['/contas/create']);
   }
 
 }

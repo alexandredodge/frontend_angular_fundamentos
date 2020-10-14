@@ -15,7 +15,7 @@ export class ContaListagemComponent implements OnInit {
   constructor(private contaService:ContaService) { }
 
   ngOnInit():void {
-	  this.contaService.findAllContas().subscribe(retorno =>{
+	  this.contaService.buscarContas().subscribe(retorno =>{
 		  this.contas = retorno;
 		  console.log(this.contas);
 	  });

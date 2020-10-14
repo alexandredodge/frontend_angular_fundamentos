@@ -25,8 +25,18 @@ export class ContaService{
     criarCOnta(conta:Conta):Observable<Conta>{
         return this.http.post<Conta>(this.baseUrl,conta);
 	}
-	
-	findAllContas():Observable<Conta[]>{
+    
+    atualizarConta(conta:Conta):Observable<Conta>{
+        const url = `${this.baseUrl}/${conta.id}`;
+        return this.http.put<Conta>(url,conta);
+    }
+
+	buscarContas():Observable<Conta[]>{
 		return this.http.get<Conta[]>(this.baseUrl);
-	}
+    }
+    
+    buscarContaPorId(id:string):Observable<Conta>{
+        const url = `${this.baseUrl}/${id}`;
+        return this.http.get<Conta>(url);
+    }
 }
