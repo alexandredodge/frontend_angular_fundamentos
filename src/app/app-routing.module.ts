@@ -11,6 +11,8 @@ import { ProductDeleteComponent } from './components/product/product-delete/prod
 import { ContaCreateComponent } from './components/contas/conta-create/conta-create.component'
 import { ContaCrudComponent } from './views/conta-crud/conta-crud.component'
 import { ContaUpdateComponent } from './components/contas/conta-update/conta-update.component';
+import { ContaDeleteComponent } from './components/contas/conta-delete/conta-delete.component';
+import { UsuarioUpdateComponent } from './components/usuarios/usuario-update/usuario-update.component';
 
 
 const routes: Routes = [{
@@ -43,6 +45,12 @@ const routes: Routes = [{
 },{
 	path:"contas/update/:id",
 	component:ContaUpdateComponent
+},{
+	path:"contas/delete/:id",
+	component:ContaDeleteComponent
+},{
+	path:"usuarios/update/:id",
+	component:UsuarioUpdateComponent
 }
   
 ];

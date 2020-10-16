@@ -27,4 +27,8 @@ export class UsuarioService{
     create(usuario:Usuario): Observable<Usuario>{
         return this.http.post<Usuario>(this.baseUrl,usuario);
     }
+
+    buscarTodosUsuarios():Observable<Usuario[]>{
+        return this.http.get<Usuario[]>(this.baseUrl);
+    }
 }

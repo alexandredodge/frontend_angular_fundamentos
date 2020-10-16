@@ -37,6 +37,9 @@ import { ContaCreateComponent } from './components/contas/conta-create/conta-cre
 import { ContaCrudComponent } from './views/conta-crud/conta-crud.component';
 import { ContaListagemComponent } from './components/contas/conta-listagem/conta-listagem.component';
 import { ContaUpdateComponent } from './components/contas/conta-update/conta-update.component';
+import { ContaDeleteComponent } from './components/contas/conta-delete/conta-delete.component';
+import { UsuarioListagemComponent } from './components/usuarios/usuario-listagem/usuario-listagem.component';
+import { UsuarioUpdateComponent } from './components/usuarios/usuario-update/usuario-update.component';
 
 
 
@@ -67,7 +70,10 @@ registerLocaleData(localePt);
     ContaCreateComponent,
     ContaCrudComponent,
     ContaListagemComponent,
-    ContaUpdateComponent
+    ContaUpdateComponent,
+    ContaDeleteComponent,
+    UsuarioListagemComponent,
+    UsuarioUpdateComponent
   ],
   imports: [
 	BrowserModule,

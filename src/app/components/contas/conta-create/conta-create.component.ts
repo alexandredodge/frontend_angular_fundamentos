@@ -32,5 +32,9 @@ export class ContaCreateComponent implements OnInit {
       this.router.navigate(['/contas']);
     })
   }
+
+  cancel(){
+    this.router.navigate(['/contas']);
+  }
  
 }

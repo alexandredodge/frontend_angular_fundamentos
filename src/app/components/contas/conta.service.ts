@@ -39,4 +39,9 @@ export class ContaService{
         const url = `${this.baseUrl}/${id}`;
         return this.http.get<Conta>(url);
     }
+
+    delete(id:number):Observable<Conta>{
+        const url = `${this.baseUrl}/${id}`;
+        return this.http.delete<Conta>(url);
+    }
 }
